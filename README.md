@@ -16,9 +16,6 @@ The framework for API testing is designed to ensure:
 - **Scalability:** Easy to extend for additional test cases.
 - **Readability:** Clear documentation and descriptive test case names.
 
-## Test cases and output HTML reports -
-The test cases Excel file is provided in the repository it is named `testCases.xlsx` and .
-
 ## Features
 
 - **UI Testing:** Automates login tests, including positive and negative scenarios.
