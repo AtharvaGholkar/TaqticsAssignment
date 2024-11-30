@@ -1,0 +1,6 @@
+robotframework
+selenium
+robotframework-requests
+robotframework-seleniumlibrary
+robotframework-jsonlibrary
+robotframework-pabot
