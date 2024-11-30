@@ -39,12 +39,6 @@ Send Post Request For Auth
     Log    Response content: ${response.content}
     Return From Keyword    ${response}
 
-Check if status code is 200
-    [Arguments]    ${actual_status_code}
-    Convert To String    ${actual_status_code}
-    Log    Actual status code: ${actual_status_code}
-    Run Keyword If    ${actual_status_code} == ${200}  Fail     Status code should not be 200. It should be either 400,401 or 403 depending upon the api documentation.
-
 Check Status Code
     [Arguments]    ${actual_status_code}    ${expected_status_code}
     Log    Actual status code: ${actual_status_code}
