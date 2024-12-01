@@ -1,5 +1,5 @@
 
-# QA Automation Framework for Login Testing
+# QA Automation Testing using Robot Framework - 
 
 This repository contains an automation framework designed to test the login functionality of the Landmark Taqtics web application. 
 The framework leverages the Robot Framework,SeleniumLibrary RequestsLibrary and Pabot(parallel test runner)  for UI automation and API automation testing.
