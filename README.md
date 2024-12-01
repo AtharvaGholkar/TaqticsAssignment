@@ -1,5 +1,5 @@
 
-# QA Automation Testing using Robot Framework - 
+# QA Automation Testing using Robot Framework 
 
 This repository contains an automation framework designed to test the login functionality of the Landmark Taqtics web application. 
 The framework leverages the Robot Framework,SeleniumLibrary RequestsLibrary and Pabot(parallel test runner)  for UI automation and API automation testing.
@@ -74,7 +74,7 @@ The framework for API testing is designed to ensure:
 6. After execution, review the reports generated in the `ui_reports/` or `api_reports/` directory based on which command has been run.
 
 
-## Conclusion - 
+## Conclusion
 
 ### Test Summary
 
@@ -82,7 +82,7 @@ The framework for API testing is designed to ensure:
 - **Tests Passed:** `12`  
 - **Tests Failed:** `1`
 
-  ### Details of the Failed Test:
+  ### Details of the Failed Test
 - **API Endpoint:** `/generateAuthToken`  
 - **Scenario:** Token generation for a non-admin user.  
   - The API is expected to generate tokens exclusively for users with admin privileges.  
