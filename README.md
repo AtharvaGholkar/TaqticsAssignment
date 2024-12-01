@@ -36,15 +36,14 @@ The framework for API testing is designed to ensure:
 ## Setup Instructions
 
 1. **Clone the repository:**
-   ``` https://github.com/AtharvaGholkar/Taqtics.git```
+   ` https://github.com/AtharvaGholkar/Taqtics.git`
 
 2. **Install dependencies:**
    - Ensure you have Python installed on your system.
    - Install dependencies using requirements.txt.
      
-     ```pip install -r requirements.txt```
+     `pip install -r requirements.txt`
      
-
 3. **Setup WebDriver:**
    - Download the WebDriver (e.g., ChromeDriver) compatible with your browser version.
    - Add the WebDriver to your system's PATH or inside Scripts folder in python folder.
@@ -54,18 +53,22 @@ The framework for API testing is designed to ensure:
    - Navigate to `loginPageKeywords.robot` or `authApiKeywords.robot`  to add or update variables and keywords.
 
 ## Execution Instructions
+**Note**: If you want to run it in headless mode just add `headless` before browser name in ${browser} variable. 
+For example `${browser}   headlesschrome`.
 
 1. To execute all ui test cases in parallel mode:
    
-   ```pabot --testlevelsplit --outputdir ui_automation_testing/ui_reports ui_automation_testing/test_cases/loginTestCases.robot```
+   `pabot --testlevelsplit --outputdir ui_automation_testing/ui_reports ui_automation_testing/test_cases/loginTestCases.robot`
    
-
 2. To execute all ui test cases in parallel mode:
    
-   ```pabot --testlevelsplit --outputdir api_automation_testing/api_reports api_automation_testing/test_cases/authTestCases.robot```
-   
+   `pabot --testlevelsplit --outputdir api_automation_testing/api_reports api_automation_testing/test_cases/authTestCases.robot`
 
-3. After execution, review the reports generated in the `ui_reports/` or `api_reports/` directory based on which command has been run.
+3. To execute all ui and api test cases serially:
+   `robot --outputdir   ui_automation_testing/ui_reports ui_automation_testing/test_cases/loginTestCases.robot`
+   `robot --outputdir api_automation_testing/api_reports api_automation_testing/test_cases/authTestCases.robot`
+
+5. After execution, review the reports generated in the `ui_reports/` or `api_reports/` directory based on which command has been run.
 
 
 
