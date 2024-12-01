@@ -82,13 +82,14 @@ The framework for API testing is designed to ensure:
 - **Tests Passed:** `12`  
 - **Tests Failed:** `1`
 
-  ### Details of the Failed Test
+### Details of the Failed Test
 - **API Endpoint:** `/generateAuthToken`  
-- **Scenario:** Token generation for a non-admin user.  
-  - The API is expected to generate tokens exclusively for users with admin privileges.  
-  - The provided non-admin user should have caused an error; however, a token was incorrectly generated.
-  - The priority and severity for this defect will be P1 and S1 respectively.
-  - This issue highlights a potential flaw in role-based access enforcement, which requires immediate attention.
+- **Test case ID:** API_TC_001.
+- **Test case description:** Verify that a non-admin user receives an error.
+- **Expected result:** The API should return Status code 403                                                                         
+- **Actual result:** The API  returns Status code 200                                                       
+- **Priority and severity:** P1 and S1.
+- This issue highlights a potential flaw in role-based access enforcement, which requires immediate attention.
 
 
 
