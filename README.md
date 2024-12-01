@@ -16,12 +16,11 @@ The framework for API testing is designed to ensure:
 - **Scalability:** Easy to extend for additional test cases.
 - **Readability:** Clear documentation and descriptive test case names.
 
-## Features
+## What This Project Covers
 
 - **UI Testing:** Automates login tests, including positive and negative scenarios.
 - **Error Validation:** Validates error messages for incorrect credentials, empty fields, and invalid email formats.
-- **API Testing:** Verifies the `/generateAuthToken` endpoint.
-- **Reusable Keywords:** Modular keywords for common actions like login, validation, and logout.
+- **API Testing:** Automated authentication api tests, covering both positive and negative scenarios for the /generateAuthToken endpoint.
 
 ## Tools and Technologies Used
 
@@ -31,7 +30,6 @@ The framework for API testing is designed to ensure:
 - **Pabot:** For parallel test case execution.
 - **Python:** Language for custom scripts and automation logic.
 - **PyCharm:** IDE for development.
-
 
 ## Setup Instructions
 
@@ -74,6 +72,23 @@ The framework for API testing is designed to ensure:
    
 
 6. After execution, review the reports generated in the `ui_reports/` or `api_reports/` directory based on which command has been run.
+
+
+## Conclusion - 
+
+### Test Summary
+
+- **Total Tests Executed:** `13`  
+- **Tests Passed:** `12`  
+- **Tests Failed:** `1`
+
+  ### Details of the Failed Test:
+- **API Endpoint:** `/generateAuthToken`  
+- **Scenario:** Token generation for a non-admin user.  
+  - The API is expected to generate tokens exclusively for users with admin privileges.  
+  - The provided non-admin user should have caused an error; however, a token was incorrectly generated.
+  - The priority and severity for this defect will be P1 and S1 respectively.
+  - This issue highlights a potential flaw in role-based access enforcement, which requires immediate attention.
 
 
 
