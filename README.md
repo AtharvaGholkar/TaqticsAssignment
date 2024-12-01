@@ -46,29 +46,34 @@ The framework for API testing is designed to ensure:
      
 3. **Setup WebDriver:**
    - Download the WebDriver (e.g., ChromeDriver) compatible with your browser version.
-   - Add the WebDriver to your system's PATH or inside Scripts folder in python folder.
+   - Add the WebDriver to your system's PATH or inside Scripts folder in python folder `\Python\Python<version>\Scripts\`.
 
-4. **Add or Update Variables or Keywords:**
+4. **Add or Update Variables and Keywords:**
    - Navigate to `Locators.py` to update element locators.
    - Navigate to `loginPageKeywords.robot` or `authApiKeywords.robot`  to add or update variables and keywords.
 
 ## Execution Instructions
 **Note**: If you want to run it in headless mode just add `headless` before browser name in ${browser} variable. 
-For example `${browser}   headlesschrome`.
+`${browser}   headlesschrome`
 
 1. To execute all ui test cases in parallel mode:
    
    `pabot --testlevelsplit --outputdir ui_automation_testing/ui_reports ui_automation_testing/test_cases/loginTestCases.robot`
    
-2. To execute all ui test cases in parallel mode:
+   
+3. To execute all ui test cases in parallel mode:
    
    `pabot --testlevelsplit --outputdir api_automation_testing/api_reports api_automation_testing/test_cases/authTestCases.robot`
+   
 
-3. To execute all ui and api test cases serially:
+4. To execute all ui and api test cases serially:
+   
    `robot --outputdir   ui_automation_testing/ui_reports ui_automation_testing/test_cases/loginTestCases.robot`
+   
    `robot --outputdir api_automation_testing/api_reports api_automation_testing/test_cases/authTestCases.robot`
+   
 
-5. After execution, review the reports generated in the `ui_reports/` or `api_reports/` directory based on which command has been run.
+6. After execution, review the reports generated in the `ui_reports/` or `api_reports/` directory based on which command has been run.
 
 
 
